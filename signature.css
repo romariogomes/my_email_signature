@@ -1,0 +1,58 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+div.content {
+  padding: 10px;
+}
+div.content svg {
+  font-size: 1.2em !important;
+}
+div.content div.name, div.content div.job-title, div.content div.email, div.content div.phone span#phone-number {
+  font-size: 14px;
+}
+div.content div.name {
+  font-weight: 700;
+}
+div.content div.social-medias svg {
+  margin: 0px 10px 10px 0px;
+}
+div.content div.social-medias svg.fa-linkedin {
+  color: #0077B5;
+}
+div.content div.social-medias svg.fa-github {
+  color: #000;
+}
+div.content div.social-medias svg.fa-facebook-square {
+  color: #3B5998;
+}
+div.content div.social-medias svg.fa-instagram {
+  color: #000;
+}
+div.content div.social-medias svg.fa-twitter {
+  color: #1DCAFF;
+}
+div.content div.social-medias svg.fa-skype {
+  color: #00AFF0;
+}
+div.content div.email {
+  margin: 0px 0px 7px 0px;
+}
+div.content div.email svg {
+  margin: 0px 7px -3px 0px;
+  color: #000;
+}
+div.content div.phone span#flag {
+  background: url("https://image.flaticon.com/icons/svg/164/164920.svg");
+  background-repeat: no-repeat;
+  height: 19px;
+  width: 25px;
+  display: block;
+  margin: -17px 0px 0px 29px;
+  position: absolute;
+}
+div.content div.phone span#phone-number {
+  position: absolute;
+  margin: 0px 0px 0px 37px;
+}

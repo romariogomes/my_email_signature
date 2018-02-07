@@ -1,0 +1,53 @@
+$flag-url: "https://image.flaticon.com/icons/svg/164/164920.svg";
+$icons: linkedin, github, facebook-square, instagram, twitter, skype;
+$colors: #0077B5, #000, #3B5998, #000, #1DCAFF, #00AFF0; 
+
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+div.content {
+  padding: 10px;
+  svg{
+    font-size: 1.2em !important;
+  }
+  div.name, div.job-title, div.email, div.phone span#phone-number {
+    font-size:14px;
+  }
+  div.name{
+    font-weight: 700;
+  }
+  div.social-medias{
+    svg{
+  		margin: 0px 10px 10px 0px;
+    }
+    @for $i from 0 to length($icons) {
+      svg.fa-#{nth($icons, $i+1)} {
+        color: nth($colors, $i+1);
+      }
+    }
+  }
+  div.email{
+    margin: 0px 0px 7px 0px;
+    svg{
+  	  margin: 0px 7px -3px 0px;
+  	  color: #000;
+    }
+  }
+  div.phone{
+    span#flag{
+    background: url($flag-url);
+    background-repeat: no-repeat;
+    height: 19px;
+    width: 25px;
+    display: block;
+    margin: -17px 0px 0px 29px;
+    position: absolute;
+    }
+    span#phone-number{
+      position: absolute;
+      margin: 0px 0px 0px 37px;
+    }
+  }
+}
